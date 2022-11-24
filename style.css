@@ -1,0 +1,846 @@
+.navbar {
+    overflow: hidden;
+    padding-top: 20px;
+    background: linear-gradient(147.38deg, #F5F7FE 0.66%, #FFE8E8 69.06%, #E2DBFD 100%);
+    background-size: cover;
+    margin: 0 auto;
+    font-family: 'Inter';
+    display: flex;
+}
+
+.navbar-left h4 {
+    color: #4d4a4a;
+    font-family: 'Inter';
+    font-size: 25px;
+    transform: scale(1.1, 1);
+    position: absolute;
+    left: 120px;
+    padding-top: 20px;
+    padding-right: 155px;
+}
+
+.navbar-right h4 {
+    color: #4d4a4a;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    transform: scale(1.1, 1);
+    position: absolute;
+    right: 0px;
+    padding-top: 20px;
+    padding-right: 140px;
+}
+@media only screen and (max-width: 560px) {
+  .navbar-right h4 {
+      display: none;
+  }
+  .navbar-left h4{
+      align-items: left;
+      font-size: 5vw;
+  }
+}
+
+body {
+    background-color: linear-gradient(63deg,#FFD8FC 50.00%, #FF3333 50.06%, #FFFFFF 100%);
+    margin: 0;
+    font-family: 'Inter';
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: linear-gradient(147.38deg, #F5F7FE 0.66%, #FFE8E8 69.06%, #E2DBFD 100%);
+    ;
+    margin: 0px;
+}
+
+.container {
+    font-family: 'Inter';
+    margin: 20px 40px;
+}
+
+.container h1 {
+    color: #4d4a4a;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    padding-left: 7%;
+    text-align: left;
+}
+
+.container h3 {
+    color: #000000;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.container h5 {
+    color: #4d4a4a;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.profiles {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 80px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #808080;
+}
+
+.events {
+    padding: 1rem;
+}
+
+.events__title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #4D4A4A;
+}
+
+.events-card {
+    overflow-x: auto;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-auto-flow: column;
+    grid-auto-columns: 200px;
+    gap: 16px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.events-card__box {
+    background-color: white;
+    text-align: center;
+    margin: 8px;
+    min-width: 200px;
+    min-height: 200px;
+    width: 200px;
+    height: 200px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-card__top {
+    display: flex;
+    background-color: #CA9847;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+}
+
+.events-card__top-title {
+    font-size: 20px;
+}
+
+.events-card__bot {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-card__bot-title {
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+.events-card__bot-text {
+  color:#4d4a4a;
+  font-weight: 400;
+  text-decoration: none;
+}
+a:any-link {
+  text-decoration-color: #4d4a4a;
+  text-decoration: none;
+}
+.sign {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.sign__title {
+    font-size: 20px;
+    text-align: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: 1rem;
+    color: #4D4A4A;
+}
+
+.sign-card__form {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(147.38deg, #F5F7FE 0.66%, #FFE8E8 69.06%, #E2DBFD 100%);
+    border-radius: 1rem;
+    max-width: 393px;
+}
+
+.sign-card__subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    padding-right: 1rem;
+    color: #4D4A4A;
+}
+
+.sign-card__input {
+    font-size: 12px;
+    padding: 8px;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: none;
+    width: 300px;
+    padding-left: 1rem;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    opacity: 75%;
+}
+
+.sign-card__form-button {
+    margin-top: 1rem;
+    padding: .5rem 3rem;
+    background-color: #E7A0A0;
+    color: white;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+}
+
+@media screen and (min-width: 300px) {
+    .sign-card__input {
+        min-width: 250px;
+        max-width: 250px;
+        /* margin-left: 10px; */
+        align-items: center;
+    }
+    .discord-card {
+        align-items: center;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .sign-card__input {
+        min-width: 300px;
+        max-width: 300px;   
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .events__title {
+        font-size: 1.2rem;
+        padding-top: 0.2vh;
+        padding-bottom: .2vh;
+    }
+    .events-card {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: lightgray;
+        gap: 32px;
+    }
+    .events-card__top-title {
+        padding-top: 2rem;
+    }
+    .sign-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .sign-card__form {
+        max-width: 352px;
+        padding-bottom: 1rem;
+        margin-left: .5rem;
+    }
+    .discord-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(147.38deg, #F5F7FE 0.66%, #FFE8E8 69.06%, #E2DBFD 100%);
+        border-radius: 1rem;
+        max-width: 352px;
+        margin-right: .5rem;
+    }
+    .discord-card__title {
+        font-size: 14px;
+        color: #4D4A4A;
+    }
+    .discord-card__text {
+        text-align: center;
+        padding: 1rem;
+        font-size: 14px;
+        color: #4D4A4A;
+    }
+    .discord-card__button {
+        padding: .5rem 3rem;
+        background-color: #E7A0A0;
+        color: white;
+        border-radius: .5rem;
+        border: none;
+        box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .events {
+        padding: 6rem;
+    }
+    .events__title {
+        font-size: 36px;
+        padding-bottom: 3rem;
+    }
+    .events-card {
+        grid-template-rows: 225px 225px;
+        grid-auto-columns: 225px;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .events-card__box {
+        min-width: 225px;
+        min-height: 225px;
+        width: 225px;
+        height: 225px;
+    }
+    .sign {
+        padding: 3rem;
+    }
+    .sign-card {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .sign__title {
+        padding-left: 3rem;
+        font-size: 36px;
+    }
+    .sign-card__form {
+        max-width: none;
+        max-width: 620px;
+        margin-left: 2rem;
+        border-radius: 2rem;
+    }
+    .sign-card__subtitle {
+        font-size: 18px;
+    }
+    .sign-card__input {
+        font-size: 18px;
+        min-width: 500px;
+        max-width: 500px;
+    }
+    .sign-card__form-button {
+        padding: .5rem 5.5rem;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .discord-card {
+        max-width: none;
+        max-width: 620px;
+        margin-right: 2rem;
+        border-radius: 2rem;
+    }
+    .discord-card__title {
+        font-size: 32px;
+    }
+    .discord-card__text {
+        font-size: 20px;
+    }
+    .discord-card__button {
+        padding: .5rem 5.5rem;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.profile {
+    flex-basis: 80px;
+}
+
+.profile .profile-img {
+    height: 150px;
+    width: 150px;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50%;
+    border-color: #4d4a4a;
+}
+
+.name {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .container {
+        text-align: center;
+    }
+    .profiles {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*width: 100%;*/
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 33.33%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .container {
+        text-align: center;
+        margin: 2vw 2vw;
+    }
+    .profiles {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 0.1vw;
+        /* white-space: wrap; */
+        /*width: 100%;*/
+     }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 33.33%;
+    }
+    .profile .profile-img {
+      height: 20vw;
+      width: 20vw;
+      border-style: solid;
+      border-width: 0.4vw;
+      border-radius: 50%;
+      border-color: #4d4a4a;
+  }
+    .container h3 {
+      color: #000000;
+      font-family: 'Epilogue', sans-serif;
+      font-size: 4vw;
+      font-style: italic;
+  }
+  
+  .container h5 {
+      color: #4d4a4a;
+      font-family: 'Epilogue', sans-serif;
+      font-weight: 400;
+      font-size: 3vw;
+      padding-bottom: 2vw;
+  }
+}  
+
+footer {
+    /*position: absolute;*/
+    bottom: 0;
+    /*width: 100%;*/
+}
+
+.footer-distributed {
+    font-family: 'Inter';
+    background-color: #ffffff;
+    display: flex;
+    padding: 25px;
+    border-top: 15px solid #e7a0a0;
+}
+
+.footer-distributed .footer-center a,
+.footer-distributed .footer-right a {
+    text-decoration: none;
+}
+
+.footer-distributed h3 {
+    color: #4d4a4a;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    transform: scale(1.1, 1);
+}
+
+.footer-distributed h4 {
+    color: #4d4a4a;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    transform: scale(1.1, 1);
+}
+
+.footer-left {
+    padding-top: 5px;
+    padding-right: 10px;
+    margin-left: 40px;
+}
+
+.footer-center .social {
+    display: inline-block;
+}
+
+.footer-center .social a {
+    padding-right: 1em;
+}
+
+.footer-right {
+    position: absolute;
+    right: 0px;
+    padding-right: 175px;
+}
+
+@media only screen and (max-width: 560px) {
+    .footer-distributed h4 {
+        display: none;
+    }
+    .footer-distributed .footer-center {
+        align-items: center;
+    }
+}
+
+.subtitle {
+    margin-top: 150px;
+}
+
+#main-title {
+    font-size: 45px;
+    font-family: 'Inter', sans-serif;
+    color: #4D4A4A;
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    text-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
+    margin-bottom: -2px;
+}
+
+.indent {
+    margin-top: -15px;
+    margin-left: 75px;
+}
+
+.indent li {
+    line-height: 1;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #4D4A4A;
+}
+
+.container_2 {
+    margin-left: 150px;
+    margin-top: 150px;
+    margin-right: 250px;
+}
+
+p,
+li {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #4D4A4A;
+}
+
+li {
+    margin-top: 30px;
+}
+
+.land {
+    margin-top: 150px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -35px;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 0.2;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 36;
+    color: #4D4A4A;
+}
+
+#hero-img {
+    position: absolute;
+    margin-left: 650px;
+    margin-top: -1100px;
+    width: 40%;
+    transform: rotate(-15deg);
+    /* you can use  */
+    height: auto;
+}
+
+.sub {
+    margin-bottom: 80px;
+}
+
+#global {
+    margin-top: 50px;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+.hero {
+    margin-right: 450px;
+    margin-bottom: 310px;
+}
+
+.title {
+    margin-bottom: 100px;
+}
+
+.land {
+    margin-left: 150px;
+    margin-right: 320px;
+    margin-bottom: 100px;
+}
+
+#bottomtext {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 1250px) {
+    .container_2 {
+        margin-left: 15vw;
+        margin-top: 10vh;
+        margin-right: 10vw;
+    }
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: 3vw;
+        font-weight: bold;
+        color: #4D4A4A;
+    }
+    p,
+    li {
+        font-family: 'Epilogue', sans-serif;
+        font-size: 1.75vw;
+        line-height: 1.5;
+        color: #4D4A4A;
+    }
+    li {
+        margin-top: 30px;
+    }
+    .land {
+        margin-top: 150px;
+    }
+    ul {
+        list-style-type: none;
+        margin-left: -35px;
+    }
+    h2 {
+        font-size: 2.5vw;
+    }
+    #hero-img {
+        position: absolute;
+        margin-left: 35vw;
+        margin-top: -55vw;
+        width: 40%;
+        transform: rotate(-15deg);
+        /* you can use  */
+        height: auto;
+    }
+    .sub {
+        margin-bottom: 80px;
+    }
+    #global {
+        margin-top: 50px;
+    }
+    .content {
+        margin-top: 100px;
+    }
+    .hero {
+        margin-right: 10vw;
+        margin-bottom: 5vh;
+    }
+    .title {
+        margin-bottom: 100px;
+    }
+    .land {
+        margin-left: 150px;
+        margin-right: 320px;
+        margin-bottom: 100px;
+    }
+    #bottomtext {
+        margin-top: 30px;
+    }
+    #main-title {
+        font-size: 5vw;
+        letter-spacing: 0.2vw;
+        text-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
+        margin-bottom: -2px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container_2 {
+        margin-left: 10vw;
+        margin-top: 10vh;
+        margin-right: 5vw;
+    }
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: 3vw;
+        font-weight: bold;
+        color: #4D4A4A;
+    }
+    p,
+    li {
+        font-family: 'Epilogue', sans-serif;
+        font-size: 2vw;
+        line-height: 1.5;
+        color: #4D4A4A;
+    }
+    li {
+        margin-top: 30px;
+    }
+    .land {
+        margin-top: 150px;
+    }
+    ul {
+        list-style-type: none;
+        margin-left: -35px;
+    }
+    h2 {
+        font-size: 2.5vw;
+    }
+    #hero-img {
+        position: absolute;
+        margin-left: 35vw;
+        margin-top: -65vw;
+        width: 40%;
+        transform: rotate(-15deg);
+        /* you can use  */
+        height: auto;
+    }
+    .sub {
+        margin-bottom: 80px;
+    }
+    #global {
+        margin-top: 50px;
+    }
+    .content {
+        margin-top: 100px;
+    }
+    .hero {
+        margin-right: 20vw;
+        margin-bottom: 15vh;
+    }
+    .title {
+        margin-bottom: 100px;
+    }
+    .land {
+        margin-left: 10vw;
+        margin-top: 10vh;
+        margin-right: 5vw;
+    }
+    #bottomtext {
+        margin-top: 30px;
+    }
+    #main-title {
+        font-size: 5vw;
+        letter-spacing: 0.2vw;
+        text-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
+        margin-bottom: -2px;
+    }
+}
+
+@media only screen and (max-width: 641px) {
+    .container_2 {
+        margin-left: 10vw;
+        margin-top: 10vh;
+        margin-right: 10vw;
+    }
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: 5vw;
+        font-weight: bold;
+        color: #4D4A4A;
+    }
+    p,
+    li {
+        font-family: 'Epilogue', sans-serif;
+        font-size: 15px;
+        line-height: 2;
+        color: #4D4A4A;
+    }
+    li {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .land {
+        margin-top: 10vw;
+    }
+    ul {
+        list-style-type: none;
+        margin-left: -35px;
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #hero-img {
+        visibility: hidden;
+    }
+    .sub {
+        margin-bottom: 80px;
+    }
+    #global {
+        margin-top: 50px;
+    }
+    .content {
+        margin-top: 100px;
+    }
+    .hero {
+        margin-right: 20vw;
+        margin-bottom: 15vh;
+    }
+    .title {
+        margin-bottom: 100px;
+    }
+    .land {
+        margin-left: 10vw;
+        margin-top: 10vh;
+        margin-right: 10vw;
+    }
+    #bottomtext {
+        margin-top: 30px;
+    }
+    #main-title {
+        font-size: 5vw;
+        letter-spacing: 0.2vw;
+        text-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
+        margin-bottom: 5px;
+    }
+    #lili {
+        margin-top: 30px;
+        line-height: 2px;
+        /* white-space: nowrap; */
+    }
+    .indent {
+        margin-left: vw;
+    }
+}
